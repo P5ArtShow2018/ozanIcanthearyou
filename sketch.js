@@ -11,13 +11,13 @@ function setup() {
 function draw() {
   console.log(sound); adjustidSound = sound.getLevel() * 1080; noStroke();
   fill(colour); ellipse(width / 2, height / 2, adjustidSound);
+  chech();
 }
 
 function i_cant_hear_you() { hear_you.play(); }
 
 function check() {
- if(adjustidSound < 0.25) {i_cant_hear_you(); }
- else if(adjustidSound > 0.75) { colour = color(random(0, 255), random(0, 255), random(0, 255)); }
+ if(adjustidSound) { colour = color(random(0, 255), random(0, 255), random(0, 255)); }
 }
 
 function windowResized() { resizeCanvas(window.innerWidth, window.innerHeight); }
