@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   console.log(sound); adjustidSound = sound.getLevel() * 1080; noStroke();
   fill(colour); ellipse(width / 2, height / 2, adjustidSound);
-  chech();
+  check();
 }
 
 function i_cant_hear_you() { hear_you.play(); }
