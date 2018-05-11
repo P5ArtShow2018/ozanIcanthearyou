@@ -1,6 +1,5 @@
 var sound; var hear_you; var colour;
 
-function preload() { hear_you = loadSound('hear_you.mp3'); }
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
